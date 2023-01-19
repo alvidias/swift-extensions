@@ -10,7 +10,7 @@ import UIKit
 
 @available(iOS 13.0, *)
 extension UITabBarController {
-    func setupTabBar(backgroundColor: UIColor, titleColor: UIColor, selectedItemColor: UIColor, unselectedItemColor: UIColor) {
+    public func setupTabBar(backgroundColor: UIColor, titleColor: UIColor, selectedItemColor: UIColor, unselectedItemColor: UIColor) {
         let tabBarAppearance = UITabBarAppearance()
         
         tabBarAppearance.configureWithTransparentBackground()

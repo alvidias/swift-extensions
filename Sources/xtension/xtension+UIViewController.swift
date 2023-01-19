@@ -9,7 +9,7 @@ import UIKit
 
 @available(iOS 13.0, *)
 extension UIViewController {
-    func configureNavigationBar(backgroundColor: UIColor, titleColor: UIColor, buttonColor: UIColor) {
+    public func configureNavigationBar(backgroundColor: UIColor, titleColor: UIColor, buttonColor: UIColor) {
         let navBarAppearance = UINavigationBarAppearance()
         
         navBarAppearance.configureWithTransparentBackground()
@@ -21,7 +21,7 @@ extension UIViewController {
         UINavigationBar.appearance().scrollEdgeAppearance = navBarAppearance
     }
     
-    func configureTabBarItem(imageName: String, title: String) {
+    public func configureTabBarItem(imageName: String, title: String) {
         let configuration = UIImage.SymbolConfiguration(scale: .large)
         let image = UIImage(systemName: imageName, withConfiguration: configuration)
         
