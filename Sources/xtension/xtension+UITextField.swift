@@ -18,7 +18,8 @@ extension UITextField {
         borderColor: CGColor? = nil,
         font: UIFont? = nil,
         attributedPlaceholder: NSAttributedString? = nil,
-        translatesAutoresizingMaskIntoConstraints: Bool = false
+        translatesAutoresizingMaskIntoConstraints: Bool = false,
+        isSecure: Bool = false
     ) -> UITextField {
         let textField = UITextField()
         
@@ -32,6 +33,7 @@ extension UITextField {
         textField.font = font
         textField.attributedPlaceholder = attributedPlaceholder
         textField.placeholder = placeholder
+        textField.isSecureTextEntry = isSecure
         
         return textField
     }
