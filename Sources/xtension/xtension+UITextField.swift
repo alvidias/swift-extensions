@@ -10,13 +10,13 @@ import UIKit
 extension UITextField {
     public static func create(
         placeholder: String?,
-        backgroundColor: UIColor?,
-        textColor: UIColor?,
+        backgroundColor: UIColor? = nil,
+        textColor: UIColor? = nil,
         textAlignment: NSTextAlignment = .natural,
         cornerRadius: CGFloat = 0,
         borderWidth: CGFloat = 0,
-        borderColor: CGColor?,
-        font: UIFont?,
+        borderColor: CGColor? = nil,
+        font: UIFont? = nil,
         attributedPlaceholder: NSAttributedString?,
         translatesAutoresizingMaskIntoConstraints: Bool = false
     ) -> UITextField {
