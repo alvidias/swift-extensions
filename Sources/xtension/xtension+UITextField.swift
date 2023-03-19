@@ -9,7 +9,7 @@ import UIKit
 
 extension UITextField {
     public static func create(
-        placeholder: String?,
+        placeholder: String? = nil,
         backgroundColor: UIColor? = nil,
         textColor: UIColor? = nil,
         textAlignment: NSTextAlignment = .natural,
@@ -17,7 +17,7 @@ extension UITextField {
         borderWidth: CGFloat = 0,
         borderColor: CGColor? = nil,
         font: UIFont? = nil,
-        attributedPlaceholder: NSAttributedString?,
+        attributedPlaceholder: NSAttributedString? = nil,
         translatesAutoresizingMaskIntoConstraints: Bool = false
     ) -> UITextField {
         let textField = UITextField()
